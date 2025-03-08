@@ -14,12 +14,15 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="text-verde-primario-50 relative flex min-h-screen w-full flex-col justify-center overflow-hidden">
+    <section
+      id="home"
+      className="text-verde-primario-50 relative flex min-h-screen w-full flex-col justify-center overflow-hidden"
+    >
       <div className="mx-auto max-w-3xl px-4 py-32">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Contenido de texto */}
           <div className="md:w-2/3">
-            <h1 className="text-4xl md:text-4xl font-bold">
+            <h1 className="text-4xl md:text-4xl font-semibold">
               Hola, <span className="text-verde-primario-500">soy Nicolás</span>
             </h1>
             <p className="text-lg md:text-xl mt-1 text-verde-primario-200">
