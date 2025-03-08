@@ -1,6 +1,6 @@
-import "./App.css";
 import Hero from "./components/Hero/Hero";
 import NavBar from "./components/NavBar/NavBar";
+import Projects from "./components/Proyects/Proyects";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         </div>
         <NavBar />
         <Hero />
+        <Projects />
       </div>
     </>
   );

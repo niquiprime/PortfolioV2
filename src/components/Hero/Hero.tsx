@@ -15,7 +15,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = () => {
   return (
     <section className="text-verde-primario-50 relative flex min-h-screen w-full flex-col justify-center overflow-hidden">
-      <div className="container mx-auto max-w-3xl px-4 py-32">
+      <div className="mx-auto max-w-3xl px-4 py-32">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Contenido de texto */}
           <div className="md:w-2/3">
@@ -77,7 +77,6 @@ const Hero: React.FC<HeroProps> = () => {
                 aria-label="Ver Proyectos"
               >
                 <ChevronDownIcon className="h-6 w-6" aria-hidden="true" />
-                <span>Proyectos</span>
               </a>
             </div>
           </div>

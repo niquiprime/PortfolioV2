@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar: React.FC = () => {
   const navItems = [
-    { name: "Proyectos", href: "/" },
+    { name: "Proyectos", href: "#projects" },
     { name: "Sobre mi", href: "#about" },
     { name: "Habilidades", href: "#projects" },
     { name: "Contáctame", href: "#contact" },
