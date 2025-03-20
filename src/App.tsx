@@ -2,6 +2,9 @@ import HeroV2 from "./components/Hero/HeroV2";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Proyects/Proyects";
 import Skills from "./components/Skills/Skills";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         </main>
         <Projects />
         <Skills />
+        <AboutMe />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

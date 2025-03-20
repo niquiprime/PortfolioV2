@@ -73,6 +73,7 @@ export default {
       animation: {
         "background-position-spin":
           "background-position-spin 3000ms infinite alternate",
+        shine: "shine var(--duration) infinite linear",
       },
       keyframes: {
         "background-position-spin": {
@@ -81,6 +82,17 @@ export default {
           },
           "100%": {
             backgroundPosition: "bottom center",
+          },
+        },
+        shine: {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
           },
         },
       },

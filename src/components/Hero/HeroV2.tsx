@@ -52,7 +52,7 @@ const HeroV2: React.FC = () => {
           <span>Linkedin</span>
         </a>
         <a
-          href="#"
+          href="mailto:nicolas.u.a35@gmail.com"
           className="rounded-full flex items-center gap-1 border-verde-primario-50/20 border p-4 bg-verde-primario-800/50 h-10"
         >
           <Mail className="w-6 h-6" />
