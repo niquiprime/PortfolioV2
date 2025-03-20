@@ -1,11 +1,12 @@
-import Hero from "./components/Hero/Hero";
+import HeroV2 from "./components/Hero/HeroV2";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Proyects/Proyects";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
     <>
-      <div className="relative min-h-screen w-screen overflow-hidden ">
+      <div className="relative min-h-screen w-full overflow-hidden text-verde-primario-50">
         <div className="fixed inset-0 h-full w-full bg-fondo -z-10">
           {/* Efecto de resplandor pulsante */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_400px_at_50%_50%,#606c3815,transparent)] animate-pulse"></div>
@@ -20,8 +21,11 @@ function App() {
           <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_500px_at_80%_80%,#606c3820,transparent)]"></div>
         </div>
         <NavBar />
-        <Hero />
+        <main>
+          <HeroV2 />
+        </main>
         <Projects />
+        <Skills />
       </div>
     </>
   );

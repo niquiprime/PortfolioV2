@@ -4,6 +4,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        nombre: ["Roboto Slab", "serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -17,7 +20,7 @@ export default {
           300: "#bbc591",
           400: "#a1ae6d",
           500: "#84934f",
-          600: "#606c38", //principal
+          600: "#606c38",
           700: "#4f5a31",
           800: "#41492b",
           900: "#383f28",
@@ -26,7 +29,6 @@ export default {
         fondo: "#0e0e11",
         "cafe-secundario": "#EC8328",
         beige: "#FEFAE0",
-
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -68,7 +70,21 @@ export default {
           5: "hsl(var(--chart-5))",
         },
       },
+      animation: {
+        "background-position-spin":
+          "background-position-spin 3000ms infinite alternate",
+      },
+      keyframes: {
+        "background-position-spin": {
+          "0%": {
+            backgroundPosition: "top center",
+          },
+          "100%": {
+            backgroundPosition: "bottom center",
+          },
+        },
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [import("tailwindcss-animate")],
 };
