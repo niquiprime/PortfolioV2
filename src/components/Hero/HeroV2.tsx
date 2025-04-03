@@ -1,5 +1,5 @@
 import React from "react";
-import FotoPerfil from "../../assets/Perfil.webp";
+import FotoPerfil from "/Perfil.webp";
 import {
   GitHubLogoIcon,
   ChevronDownIcon,

@@ -2,11 +2,25 @@ import React from "react";
 
 const CTABanner: React.FC = () => {
   return (
-    <div className="my-10 flex flex-col items-center justify-center text-center max-w-xl mx-auto">
-      <h2>Contact Us</h2>
-      <p>We would love to hear from you!</p>
-      <button>Get in Touch</button>
-    </div>
+    <section className="bg-transparent">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div className="mx-auto max-w-screen-sm text-center">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-verde-primario-100">
+            ¿Interesado?
+          </h2>
+          <p className="mb-6 font-light text-gray-500 md:text-lg">
+            Escríbeme y te ayudaré a encontrar la mejor solución para tu
+            proyecto
+          </p>
+          <a
+            href="#"
+            className="text-verde-primario-50 bg-verde-primario-700 hover:bg-verde-primario-800 focus:ring-4 focus:ring-verde-primario-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-verde-primario-600 dark:hover:bg-verde-primario-700 focus:outline-none dark:focus:ring-verde-primario-800"
+          >
+            Envíame un correo
+          </a>
+        </div>
+      </div>
+    </section>
   );
 };
 

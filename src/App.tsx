@@ -1,10 +1,11 @@
 import HeroV2 from "./components/Hero/HeroV2";
 import NavBar from "./components/NavBar/NavBar";
-import Projects from "./components/Proyects/Proyects";
-import Skills from "./components/Skills/Skills";
+import ProjectsV2 from "./components/Proyects/ProyectsV2";
+import SkillsV2 from "./components/Skills/SkillsV2";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import CTABanner from "./components/Contact/CTABanner";
 
 function App() {
   return (
@@ -26,11 +27,12 @@ function App() {
         <NavBar />
         <main>
           <HeroV2 />
+          <SkillsV2 />
+          <ProjectsV2 />
+          <CTABanner />
+          <AboutMe />
+          <Contact />
         </main>
-        <Projects />
-        <Skills />
-        <AboutMe />
-        <Contact />
         <Footer />
       </div>
     </>

@@ -17,9 +17,9 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div
+    <section
       id="contact"
-      className="flex items-center justify-center w-full min-h-screen p-4 m"
+      className="flex items-center justify-center w-full p-4 m"
     >
       <div className="w-full max-w-6xl p-8 flex space-y-8 flex-col md:flex-row gap-10">
         {/* Columna Izquierda */}
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
               </a>
 
               <a
-                href="/ruta-a-tu-cv.pdf" // Reemplaza con la ruta real a tu CV
+                href="/CV_NicolasUrrea.pdf" // Reemplaza con la ruta real a tu CV
                 download="NicolasUrrea-CV.pdf" // Nombre del archivo al descargar
                 className="flex-1 flex items-center justify-center gap-2 p-3 border-2 border-verde-primario-400 text-verde-primario-400 hover:bg-verde-primario-400 hover:text-black font-medium rounded-lg transition-colors"
               >
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
           <IconCloudDemo />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
