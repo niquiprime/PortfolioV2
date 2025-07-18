@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className="flex items-center justify-center w-full p-4 m"
+      className="flex items-center mx-auto py-10 sm:py-16 max-w-4xl px-3 sm:px-6"
     >
       <div className="w-full max-w-6xl p-8 flex space-y-8 flex-col md:flex-row gap-10">
         {/* Columna Izquierda */}
