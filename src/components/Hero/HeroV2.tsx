@@ -23,7 +23,7 @@ const HeroV2: React.FC = () => {
       </div>
       {/* Contenido a la derecha en desktop */}
       <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold font-nombre">
           Hola,{" "}
           <span className="text-verde-primario-500">
             soy <span className="font-nombre">Nicolás</span>

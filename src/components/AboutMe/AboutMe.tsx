@@ -6,7 +6,7 @@ const AboutMe: React.FC = () => {
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 font-nombre">
         {/* Contenido izquierdo */}
         <div className="flex-1 space-y-6 mt-6 md:mt-0 w-full">
-          <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-center md:text-left">Sobre mi</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-center md:text-left font-nombre">Sobre mi</h2>
           <div className="text-base sm:text-lg text-gray-300 leading-relaxed space-y-4 text-center md:text-left">
             <p>
               Me llamo Nicolás Urrea. Empecé en el mundo de la informática

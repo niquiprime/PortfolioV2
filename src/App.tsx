@@ -1,7 +1,7 @@
 import HeroV2 from "./components/Hero/HeroV2";
 import NavBar from "./components/NavBar/NavBar";
 import ProjectsV2 from "./components/Proyects/ProyectsV2";
-import SkillsV2 from "./components/Skills/SkillsV2";
+import TechGrid from "./components/Skills/TechGrid";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -27,7 +27,7 @@ function App() {
         <NavBar />
         <main>
           <HeroV2 />
-          <SkillsV2 />
+          <TechGrid />
           <ProjectsV2 />
           <CTABanner />
           <AboutMe />

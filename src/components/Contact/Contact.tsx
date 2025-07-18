@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
         {/* Columna Izquierda */}
         <div className="flex-1 space-y-6 flex flex-col justify-center">
           <div className="text-center space-y-2">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-verde-primario-400 to-cafe-secundario bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-verde-primario-400 to-cafe-secundario bg-clip-text text-transparent font-nombre">
               ¿Interesado en contactarme?
             </h2>
             <p className="text-gray-400">Envíame un mensaje</p>

@@ -46,7 +46,7 @@ const skills = [
 const SkillsV2: React.FC = () => {
   return (
     <section className="flex w-full items-center justify-center flex-col mx-auto py-5 sm:py-5 max-w-4xl px-2 sm:px-4 text-start">
-        <h2 className="text-4xl font-bold text-left w-full">Tecnologías que uso</h2>
+        <h2 className="text-4xl font-bold bg-clip-text font-nombre">Tecnologías que uso</h2>
       <Marquee className="[--duration:20s] mt-5">
         {skills.map((skill, index) => (
           <div className="flex items-center gap-5 " key={index}>

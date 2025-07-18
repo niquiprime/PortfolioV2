@@ -23,7 +23,7 @@ const ProjectsV2: React.FC = () => {
       id="projects"
       className="py-5 flex items-start justify-center flex-col max-w-4xl mx-auto text-start px-2 sm:px-4"
     >
-      <h2 className="text-4xl font-bold bg-clip-text">Proyectos</h2>
+      <h2 className="text-4xl font-bold bg-clip-text font-nombre">Proyectos</h2>
       <div className="flex flex-col gap-6 mt-5 w-full">
         {proyects.map((proyect, index) => (
           <ProyectCard
