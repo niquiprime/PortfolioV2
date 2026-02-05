@@ -1,12 +1,20 @@
-import { ReactNode, memo } from "react";
+import { memo } from "react";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandAstro } from "react-icons/tb";
+
+// Mapa de tecnologías a iconos
+const techIcons: Record<string, React.ReactNode> = {
+  tailwind: <SiTailwindcss className="text-sky-400" />,
+  astro: <TbBrandAstro className="text-orange-400" />,
+};
 
 interface ProyectCardProps {
   title: string;
-  img?: string; // Optional property for image
+  img?: string;
   description: string;
   link: string;
   github: string;
-  tecnologies: ReactNode[]; // Optional property for technologies
+  technologies: string[];
 }
 
 const ProyectCard: React.FC<ProyectCardProps> = ({
@@ -15,14 +23,14 @@ const ProyectCard: React.FC<ProyectCardProps> = ({
   description,
   link,
   github,
-  tecnologies,
+  technologies,
 }) => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center bg-verde-primario-800/80 rounded-lg shadow-md p-3 md:p-5 w-full">
       <img
         src={img}
         alt={`Mockup proyecto ${title}`}
-        className="w-full md:w-96 h-48 md:h-full object-cover rounded-lg mb-4 md:mb-0"
+        className="w-full md:w-96 aspect-video object-cover rounded-lg mb-4 md:mb-0"
       />
       <div className="flex flex-col justify-between items-start md:ml-5 p-2 md:p-4 leading-normal w-full">
         <h3 className="font-bold text-xl md:text-2xl mb-2">{title}</h3>
@@ -47,12 +55,11 @@ const ProyectCard: React.FC<ProyectCardProps> = ({
             </a>
           </div>
           <div className="flex gap-2">
-            {tecnologies &&
-              tecnologies.map((tech, index) => (
-                <span key={index} className="text-xl md:text-2xl">
-                  {tech}
-                </span>
-              ))}
+            {technologies.map((tech) => (
+              <span key={tech} className="text-xl md:text-2xl">
+                {techIcons[tech] || tech}
+              </span>
+            ))}
           </div>
         </div>
       </div>

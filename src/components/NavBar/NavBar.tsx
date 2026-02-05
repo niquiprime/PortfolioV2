@@ -65,9 +65,9 @@ const NavBar: React.FC = () => {
           </div>
           {/* Desktop nav */}
           <div className="hidden md:flex items-center space-x-4">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <a
-                key={index}
+                key={item.href}
                 href={item.href}
                 className="hover:text-verde-primario-400 transition-colors duration-200 font-medium text-sm md:text-base"
               >
@@ -86,12 +86,12 @@ const NavBar: React.FC = () => {
         {/* Mobile menu dropdown con animación */}
         {menuVisible && (
           <div
-            className={`md:hidden absolute left-0 right-0 mt-2 bg-fondo bg-opacity-90 backdrop-blur-sm rounded-xl shadow-lg py-4 px-6 flex flex-col items-center space-y-4 z-50 transition-all duration-300
+            className={`md:hidden absolute left-0 right-0 mt-2 bg-fondo/95 backdrop-blur-md rounded-xl shadow-lg py-4 px-6 flex flex-col items-center space-y-4 z-50 transition-all duration-300
               ${menuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
           >
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <a
-                key={index}
+                key={item.href}
                 href={item.href}
                 className="block w-full text-center py-2 text-base font-medium hover:text-verde-primario-400 transition-colors duration-200"
                 onClick={handleMenuToggle}

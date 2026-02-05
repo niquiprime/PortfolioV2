@@ -1,8 +1,7 @@
-import FotoPerfil from "/Perfil.webp";
+import FotoPerfil from "/FOTO.webp";
 import {
   GitHubLogoIcon,
   ChevronDownIcon,
-  LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
 
 import { Mail } from "lucide-react";
@@ -42,18 +41,13 @@ const HeroV2: React.FC = () => {
         </h3>
         <nav className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto items-center md:items-start justify-center md:justify-start">
           <a
-            href="#"
-            className="w-full sm:w-auto justify-center rounded-full flex items-center gap-1 border-verde-primario-50/20 border p-3 sm:p-4 bg-verde-primario-800/50 h-12 sm:h-10 text-base sm:text-sm"
+            href="https://github.com/niquiprime"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto justify-center rounded-full flex items-center gap-1 border-verde-primario-50/20 border p-3 sm:p-4 bg-verde-primario-800/50 h-12 sm:h-10 text-base sm:text-sm hover:bg-verde-primario-700/50 transition-colors"
           >
             <GitHubLogoIcon className="w-6 h-6" />
             <span>GitHub</span>
-          </a>
-          <a
-            href="#"
-            className="w-full sm:w-auto justify-center rounded-full flex items-center gap-1 border-verde-primario-50/20 border p-3 sm:p-4 bg-verde-primario-800/50 h-12 sm:h-10 text-base sm:text-sm"
-          >
-            <LinkedInLogoIcon className="w-6 h-6" />
-            <span>Linkedin</span>
           </a>
           <a
             href="mailto:nicolas.u.a35@gmail.com"

@@ -40,13 +40,13 @@ const TechGrid = () => {
     <section className="w-full max-w-4xl mx-auto py-10 px-2 sm:px-4">
       <h2 className="text-3xl font-bold mb-8 text-left font-nombre">Stack Tecnológico</h2>
       <div className="flex flex-col gap-10">
-        {techGroups.map((group, idx) => (
-          <div key={idx}>
+        {techGroups.map((group) => (
+          <div key={group.title}>
             <h3 className="text-xl font-semibold mb-4 text-verde-primario-200 font-nombre">{group.title}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              {group.techs.map((tech, tIdx) => (
+            <div className={`grid gap-6 ${group.techs.length <= 2 ? 'grid-cols-2 sm:grid-cols-2 md:grid-cols-2 max-w-md' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4'}`}>
+              {group.techs.map((tech) => (
                 <div
-                  key={tIdx}
+                  key={tech.name}
                   className="flex flex-col items-center justify-center bg-verde-primario-800/60 rounded-xl shadow-md p-6 transition-transform duration-300 hover:scale-105 hover:bg-verde-primario-700/80 group"
                 >
                   <span className="text-5xl mb-2 group-hover:animate-pulse">{tech.icon}</span>

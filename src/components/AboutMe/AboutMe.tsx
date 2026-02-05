@@ -1,4 +1,4 @@
-import FotoPerfil from "/Perfil.webp";
+import FotoPerfil from "/FOTO.webp";
 
 const AboutMe: React.FC = () => {
   return (
