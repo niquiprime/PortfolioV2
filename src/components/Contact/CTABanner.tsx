@@ -1,21 +1,38 @@
-import React from "react";
+import { ShimmerButton } from "../ui/shimmer-button";
+import { ShineBorder } from "../ui/shine-border";
 
 const CTABanner: React.FC = () => {
   return (
-    <section className="bg-gradient-to-r from-verde-primario-700/20 via-verde-primario-600/30 to-verde-primario-800/40 shadow-xl rounded-2xl my-8 py-8 sm:py-12 md:py-16 max-w-4xl w-full px-2 sm:px-6 mx-auto flex items-center justify-center">
-      <div className="w-full max-w-xl flex flex-col items-center text-center gap-6">
-        <h2 className="mb-2 sm:mb-4 text-2xl xs:text-3xl sm:text-4xl md:text-5xl tracking-tight font-extrabold leading-tight text-verde-primario-50 drop-shadow-lg font-nombre">
-          ¿Listo para llevar tu proyecto al siguiente nivel?
-        </h2>
-        <p className="mb-4 sm:mb-8 font-medium text-verde-primario-100 text-base sm:text-lg md:text-xl drop-shadow">
-          Hablemos y descubre cómo puedo ayudarte a destacar en el mundo digital.
-        </p>
-        <a
-          href="#contact"
-          className="text-base sm:text-lg md:text-xl font-bold text-verde-primario-900 bg-verde-primario-50 hover:bg-verde-primario-200 focus:ring-4 focus:ring-verde-primario-300 rounded-full px-6 sm:px-8 py-3 sm:py-4 shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none w-full max-w-xs"
-        >
-          ¡Trabajemos Juntos!
-        </a>
+    <section className="my-6 sm:my-8 py-6 sm:py-10 md:py-14 max-w-4xl w-full px-3 sm:px-6 mx-auto">
+      <div className="relative rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-verde-primario-900/80 via-verde-primario-800/60 to-fondo/90 backdrop-blur-sm">
+        {/* Animated Shine Border */}
+        <ShineBorder
+          shineColor={["#84934f", "#EC8328", "#606c38"]}
+        />
+
+        <div className="relative z-10 w-full flex flex-col items-center text-center gap-4 sm:gap-6 p-5 sm:p-8 md:p-12">
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight font-extrabold leading-snug sm:leading-tight text-verde-primario-50 font-nombre px-2">
+            ¿Listo para llevar tu proyecto al siguiente nivel?
+          </h2>
+          <p className="font-medium text-verde-primario-200 text-sm sm:text-base md:text-lg lg:text-xl max-w-md sm:max-w-lg px-2">
+            Hablemos y descubre cómo puedo ayudarte a destacar en el mundo digital.
+          </p>
+
+          <a href="#contact" className="mt-2 sm:mt-4 w-full sm:w-auto flex justify-center">
+            <ShimmerButton
+              shimmerColor="#f6f7ee"
+              shimmerSize="0.08em"
+              shimmerDuration="2.5s"
+              borderRadius="9999px"
+              background="linear-gradient(135deg, #606c38 0%, #41492b 100%)"
+              className="shadow-2xl px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto max-w-xs sm:max-w-none"
+            >
+              <span className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-verde-primario-50 whitespace-nowrap">
+                ¡Trabajemos Juntos!
+              </span>
+            </ShimmerButton>
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -1,11 +1,13 @@
 import { memo } from "react";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandAstro } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
 
 // Mapa de tecnologías a iconos
 const techIcons: Record<string, React.ReactNode> = {
   tailwind: <SiTailwindcss className="text-sky-400" />,
   astro: <TbBrandAstro className="text-orange-400" />,
+  react: <FaReact className="text-cyan-400" />,
 };
 
 interface ProyectCardProps {
@@ -33,7 +35,7 @@ const ProyectCard: React.FC<ProyectCardProps> = ({
         className="w-full md:w-96 aspect-video object-cover rounded-lg mb-4 md:mb-0"
       />
       <div className="flex flex-col justify-between items-start md:ml-5 p-2 md:p-4 leading-normal w-full">
-        <h3 className="font-bold text-xl md:text-2xl mb-2">{title}</h3>
+        <h3 className="font-bold text-xl md:text-2xl mb-1">{title}</h3>
         <p className="text-base md:text-lg mb-6 md:mb-10">{description}</p>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full gap-4 md:gap-0">
           <div className="flex gap-2 md:gap-4 mb-2 md:mb-0">

@@ -15,10 +15,10 @@ const projects: Project[] = [
     title: "Poliestirec Landing Page",
     img: "/mockup-poliestirec.webp",
     description:
-      "Desarrollo de una landing page para Poliestirec, una empresa dedicada a la venta de pintura ecológica en base al reciclaje y uso del plumavit, que permitió aumentar la visibilidad de la empresa en internet y llegar a más potenciales clientes.",
+      "Landing page y cotizador automatizado para Poliestirec, empresa de pintura ecológica sustentable del sur de Chile. Optimicé la captación de clientes y la visibilidad online mediante una interfaz moderna, automatizando el proceso de presupuestos para escalar sus ventas digitales.",
     link: "https://poliestirecchile.cl/",
     github: "https://github.com/niquiprime/Poliestirec_landingPage",
-    technologies: ["tailwind", "astro"],
+    technologies: ["tailwind", "astro", "react"],
   },
 ];
 
