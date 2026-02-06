@@ -9,34 +9,32 @@ const AboutMe: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-center md:text-left font-nombre">Sobre mi</h2>
           <div className="text-base sm:text-lg text-gray-300 leading-relaxed space-y-4 text-center md:text-left">
             <p>
-              Me llamo Nicolás Urrea. Empecé en el mundo de la informática
-              gracias a los videojuegos y al uso de computador desde pequeño.
-              Actualmente estoy {" "}
+              Soy Nicolás Urrea, desarrollador FullStack de Puerto Varas, Chile.
+              Mi pasión por la tecnología comenzó desde pequeño y hoy estoy{" "}
               <strong className="text-cafe-secundario">
-                cursando mis ultimos años de la carrera
+                a punto de egresar
               </strong>{" "}
-              Ingeniería Civil Informática en la Universidad Católica de Temuco.
+              de Ingeniería Civil Informática en la Universidad Católica de Temuco.
             </p>
             <p>
-              En el largo de la carrera descubrí mi pasión hacia el mundo del
-              desarrollo de soluciones tecnológicas, especialmente en la web. Mi
-              objetivo es {" "}
+              Me especializo en convertir ideas en{" "}
               <strong className="text-cafe-secundario">
-                desarrollar soluciones
+                productos digitales reales
               </strong>{" "}
-              y brindar apoyo a empresas emergentes y startups, ayudándolas a
-              crecer y alcanzar su máximo potencial.
+              usando tecnologías modernas como React, Next.js y Supabase. Mi enfoque
+              es claro: ayudar a startups y emprendedores a despegar digitalmente,
+              creando soluciones web que escalan con su crecimiento.
             </p>
           </div>
         </div>
 
         {/* Imagen derecha */}
         <div className="relative p-2 flex-shrink-0 group">
-          <div className="absolute inset-0 bg-verde-primario-400/20 rounded-lg blur-xl group-hover:blur-2xl transition-all" />
+          <div className="absolute inset-0 bg-verde-primario-400/20 rounded-lg blur-xl group-hover:blur-2xl transition-[filter] duration-300" />
           <img
             src={FotoPerfil}
             alt="Nicolas Urrea dev"
-            className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-lg border-4 border-verde-primario-500 shadow-lg shadow-verde-primario-400/50 transform transition-all duration-300 group-hover:scale-105 mx-auto"
+            className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-lg border-4 bg-gradient-to-br from-slate-200 to-verde-primario-300 ring-4 ring-verde-primario-500 shadow-lg shadow-verde-primario-400/50 transform transition-transform duration-300 group-hover:scale-105 mx-auto"
           />
         </div>
       </div>

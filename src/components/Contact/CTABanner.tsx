@@ -12,10 +12,10 @@ const CTABanner: React.FC = () => {
 
         <div className="relative z-10 w-full flex flex-col items-center text-center gap-4 sm:gap-6 p-5 sm:p-8 md:p-12">
           <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight font-extrabold leading-snug sm:leading-tight text-verde-primario-50 font-nombre px-2">
-            ¿Listo para llevar tu proyecto al siguiente nivel?
+            ¿Tienes una idea? Hagámosla realidad
           </h2>
           <p className="font-medium text-verde-primario-200 text-sm sm:text-base md:text-lg lg:text-xl max-w-md sm:max-w-lg px-2">
-            Hablemos y descubre cómo puedo ayudarte a destacar en el mundo digital.
+            Trabajo contigo desde la idea hasta el lanzamiento. Sin complicaciones, con resultados.
           </p>
 
           <a href="#contact" className="mt-2 sm:mt-4 w-full sm:w-auto flex justify-center">
@@ -28,7 +28,7 @@ const CTABanner: React.FC = () => {
               className="shadow-2xl px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto max-w-xs sm:max-w-none"
             >
               <span className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-verde-primario-50 whitespace-nowrap">
-                ¡Trabajemos Juntos!
+                Empezar Mi Proyecto
               </span>
             </ShimmerButton>
           </a>

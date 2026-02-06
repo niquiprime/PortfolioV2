@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Mail, Heart } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -16,27 +16,20 @@ const Footer: React.FC = () => {
           {/* Enlaces sociales */}
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/niquiprime"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-400 hover:text-verde-primario-400 transition-colors"
               title="GitHub"
+              aria-label="Visitar perfil de GitHub"
             >
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/yourusername/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-400 hover:text-verde-primario-400 transition-colors"
-              title="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a
-              href="mailto:your.email@example.com"
+              href="mailto:nicolas.u.a35@gmail.com"
               className="flex items-center gap-2 text-gray-400 hover:text-verde-primario-400 transition-colors"
               title="Email"
+              aria-label="Enviar correo electrónico"
             >
               <Mail className="w-5 h-5" />
             </a>

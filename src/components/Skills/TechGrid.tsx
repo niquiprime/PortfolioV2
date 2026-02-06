@@ -1,7 +1,6 @@
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGitAlt, FaDatabase } from "react-icons/fa";
 import {
   SiMongodb,
-  SiExpress,
   SiVite,
   SiTailwindcss,
   SiNextdotjs,
@@ -48,7 +47,7 @@ const TechCard = ({
   name: string;
 }) => {
   return (
-    <div className="flex items-center gap-3 bg-verde-primario-800/60 backdrop-blur-sm rounded-xl px-5 py-3 border border-verde-primario-600/30 hover:bg-verde-primario-700/80 hover:border-verde-primario-500/50 transition-all duration-300 group cursor-default">
+    <div className="flex items-center gap-3 bg-verde-primario-800/60 rounded-xl px-5 py-3 border border-verde-primario-600/30 hover:bg-verde-primario-700/80 hover:border-verde-primario-500/50 transition-colors duration-300 group cursor-default">
       <span className="text-3xl group-hover:scale-110 transition-transform duration-300">
         {icon}
       </span>

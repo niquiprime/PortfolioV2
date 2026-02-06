@@ -16,7 +16,7 @@ function App() {
           {/* Light Rays Effect */}
           <LightRays
             color="rgba(96, 108, 56, 0.25)"
-            count={12}
+            count={6}
             blur={80}
             speed={18}
             length="85vh"

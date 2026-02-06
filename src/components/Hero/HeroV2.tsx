@@ -15,7 +15,7 @@ const HeroV2: React.FC = () => {
       {/* Foto a la izquierda en desktop */}
       <div className="flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto mb-6 md:mb-0 md:mr-10">
         <img
-          className="rounded-full p-1 w-24 h-24 sm:w-20 sm:h-20 md:w-32 md:h-32 object-cover"
+          className="bg-gradient-to-br from-slate-200 to-verde-primario-300 ring-4 ring-verde-primario-500 rounded-full p-1 w-24 h-24 sm:w-20 sm:h-20 md:w-32 md:h-32 object-cover"
           src={FotoPerfil}
           alt="Foto Nicolas Urrea"
         />
@@ -31,14 +31,15 @@ const HeroV2: React.FC = () => {
         <h2 className="text-base sm:text-lg md:text-xl mt-2 sm:mt-1 text-verde-primario-200">
           FullStack Developer
         </h2>
-        <h3 className="my-6 sm:my-8 text-base sm:text-lg md:text-xl text-wrap opacity-80 max-w-full sm:max-w-[500px]">
-          Estudiante de{" "}
+        <p className="my-6 sm:my-8 text-base sm:text-lg md:text-xl text-wrap opacity-80 max-w-full sm:max-w-[500px]">
+          Desarrollador FullStack de{" "}
           <span className="text-cafe-secundario">
-            Ingeniería en Civil Informática
-          </span>{" "}
-          de Puerto Varas, Chile. con experiencia en{" "}
-          <span className="text-verde-primario-300">desarrollo web y móvil.</span>
-        </h3>
+            Puerto Varas, Chile
+          </span>
+          . Especializado en crear{" "}
+          <span className="text-verde-primario-300">soluciones web y móviles</span>{" "}
+          que transforman ideas en productos digitales funcionales.
+        </p>
         <nav className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto items-center md:items-start justify-center md:justify-start">
           <a
             href="https://github.com/niquiprime"
