@@ -17,7 +17,7 @@ const HeroV2: React.FC = () => {
         <img
           className="bg-gradient-to-br from-slate-200 to-verde-primario-300 ring-4 ring-verde-primario-500 rounded-full p-1 w-24 h-24 sm:w-20 sm:h-20 md:w-32 md:h-32 object-cover"
           src={FotoPerfil}
-          alt="Foto Nicolas Urrea"
+          alt="Nicolás Urrea, FullStack Developer de Puerto Varas, Chile"
         />
       </div>
       {/* Contenido a la derecha en desktop */}
@@ -63,7 +63,7 @@ const HeroV2: React.FC = () => {
         <a
           href="#projects"
           className="text-verde-50 flex items-center gap-2 rounded-full p-2"
-          aria-label="Ver Proyectos"
+          aria-label="Ir a la sección de proyectos"
         >
           <ChevronDownIcon className="h-6 w-6" aria-hidden="true" />
         </a>

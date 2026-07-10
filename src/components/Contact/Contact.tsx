@@ -33,16 +33,20 @@ const Contact: React.FC = () => {
 
           <div className="relative">
             <div className="flex items-center gap-2 p-3 bg-neutral-800/50 rounded-lg border border-neutral-700">
+              <label htmlFor="email-contact" className="sr-only">Dirección de correo electrónico de contacto</label>
               <input
+                id="email-contact"
                 type="text"
                 value={email}
                 readOnly
                 className="w-full bg-transparent outline-none text-gray-300"
+                aria-label="Email de contacto: nicolas.u.a35@gmail.com"
               />
               <button
                 onClick={handleCopyEmail}
                 className="p-2 hover:bg-neutral-700 rounded-md transition-colors"
-                title="Copiar email"
+                title="Copiar dirección de email"
+                aria-label="Copiar dirección de email al portapapeles"
               >
                 {copied ? (
                   <CheckCheck className="w-5 h-5 text-green-500" />

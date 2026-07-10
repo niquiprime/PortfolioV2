@@ -15,7 +15,7 @@ const projects: Project[] = [
     title: "Poliestirec Landing Page",
     img: "/mockup-poliestirec.webp",
     description:
-      "Landing page y cotizador automatizado para Poliestirec, empresa de pintura ecológica sustentable del sur de Chile. Optimicé la captación de clientes y la visibilidad online mediante una interfaz moderna, automatizando el proceso de presupuestos para escalar sus ventas digitales.",
+      "Landing page + cotizador automatico para Poliestirec, una fabrica de pintura ecologica en el sur de Chile. Arme una interfaz que muestra los productos y deja pedir presupuestos al instante, sin correos de por medio. El cotizador esta conectado directo a ODOO, asi la empresa recibe todo ordenado sin intervencion manual.",
     link: "https://poliestirecchile.cl/",
     github: "https://github.com/niquiprime/Poliestirec_landingPage",
     technologies: ["tailwind", "astro", "react"],

@@ -33,7 +33,7 @@ const AboutMe: React.FC = () => {
           <div className="absolute inset-0 bg-verde-primario-400/20 rounded-lg blur-xl group-hover:blur-2xl transition-[filter] duration-300" />
           <img
             src={FotoPerfil}
-            alt="Nicolas Urrea dev"
+            alt="Nicolás Urrea, desarrollador FullStack e Ingeniero Civil Informático de Puerto Varas, Chile"
             className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-lg border-4 bg-gradient-to-br from-slate-200 to-verde-primario-300 ring-4 ring-verde-primario-500 shadow-lg shadow-verde-primario-400/50 transform transition-transform duration-300 group-hover:scale-105 mx-auto"
           />
         </div>

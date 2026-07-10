@@ -12,13 +12,13 @@ const CTABanner: React.FC = () => {
 
         <div className="relative z-10 w-full flex flex-col items-center text-center gap-4 sm:gap-6 p-5 sm:p-8 md:p-12">
           <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight font-extrabold leading-snug sm:leading-tight text-verde-primario-50 font-nombre px-2">
-            ¿Tienes una idea? Hagámosla realidad
+            ¿Tienes un proyecto en mente? Lo construimos juntos
           </h2>
           <p className="font-medium text-verde-primario-200 text-sm sm:text-base md:text-lg lg:text-xl max-w-md sm:max-w-lg px-2">
-            Trabajo contigo desde la idea hasta el lanzamiento. Sin complicaciones, con resultados.
+            Desde la primera idea hasta el deploy. Desarrollo web y móvil hecho a medida para startups y emprendedores en Chile y LATAM.
           </p>
 
-          <a href="#contact" className="mt-2 sm:mt-4 w-full sm:w-auto flex justify-center">
+          <a href="#contact" className="mt-2 sm:mt-4 w-full sm:w-auto flex justify-center" aria-label="Contactar a Nicolás Urrea para iniciar un proyecto">
             <ShimmerButton
               shimmerColor="#f6f7ee"
               shimmerSize="0.08em"
@@ -28,7 +28,7 @@ const CTABanner: React.FC = () => {
               className="shadow-2xl px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto max-w-xs sm:max-w-none"
             >
               <span className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-verde-primario-50 whitespace-nowrap">
-                Empezar Mi Proyecto
+                Contáctame ahora →
               </span>
             </ShimmerButton>
           </a>
