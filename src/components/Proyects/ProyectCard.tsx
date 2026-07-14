@@ -33,6 +33,10 @@ const ProyectCard: React.FC<ProyectCardProps> = ({
         src={img}
         alt={`Mockup proyecto ${title}`}
         className="w-full md:w-96 aspect-video object-cover rounded-lg mb-4 md:mb-0"
+        width={384}
+        height={216}
+        loading="lazy"
+        decoding="async"
       />
       <div className="flex flex-col justify-between items-start md:ml-5 p-2 md:p-4 leading-normal w-full">
         <h3 className="font-bold text-xl md:text-2xl mb-1">{title}</h3>

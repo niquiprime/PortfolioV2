@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+
+// Static — defined outside the component so it's never recreated on re-renders
+const NAV_ITEMS = [
+  { name: "Inicio", href: "#home" },
+  { name: "Proyectos", href: "#projects" },
+  { name: "Sobre mi", href: "#about" },
+] as const;
 
 const NavBar: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [menuVisible, setMenuVisible] = useState(false);
-  const navItems = [
-    { name: "Inicio", href: "#home" },
-    { name: "Proyectos", href: "#projects" },
-    { name: "Sobre mi", href: "#about" },
-  ];
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const [menuVisible, setMenuVisible] = React.useState(false);
 
   // Maneja la visibilidad para la animación de salida
   const handleMenuToggle = () => {
@@ -65,7 +67,7 @@ const NavBar: React.FC = () => {
           </div>
           {/* Desktop nav */}
           <div className="hidden md:flex items-center space-x-4">
-            {navItems.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
@@ -89,7 +91,7 @@ const NavBar: React.FC = () => {
             className={`md:hidden absolute left-0 right-0 mt-2 bg-fondo/95 backdrop-blur-md rounded-xl shadow-lg py-4 px-6 flex flex-col items-center space-y-4 z-50 transition-[opacity,transform] duration-300
               ${menuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
           >
-            {navItems.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
