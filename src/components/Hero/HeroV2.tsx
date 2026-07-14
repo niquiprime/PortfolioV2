@@ -1,4 +1,4 @@
-import FotoPerfil from "/FOTO.webp";
+import FotoPerfil from "/FotoPerfil.webp";
 import {
   GitHubLogoIcon,
   ChevronDownIcon,
